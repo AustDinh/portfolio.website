@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<header>
+    <nav class="navbar" id="home" aria-label="Main Navigation">
+        <div class="logo">
+            <a href="#home">Austin Dinh</a>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="hamburger-label">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+
+    <section class="hero-section">
+        <div class="hero-container">
+            <img class="hero-image" src="./images/portfolio_image.png">
+        </div>
+        <div class="hero-content">
+            <h1><span class="hero-title">Web Developer | </span>Building Responsive Web Experience</h1>
+
+            <p>Hello! I'm <span class="highlight">Austin Dinh</span> a web developer focused on building websites
+                that<span class="highlight"> work</span>, <span class="highlight">look great</span>, and are
+                easy for everyone to read and use.</p>
+                
+                <button class="mywork-btn">My Work</button>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img class="about-image" src="./images/blue-controller.jpg">
+            <p>Hi, I'm Austin Dinh a Web Developer who is currently finishing my final year at Johnson County Community College.
+                I always loved being on the computer whether playing video games, watching videos, or just navigating the web.When it was time to choose a career, Web Development felt like the correct choice. 
+                I am currently expanding my toolkit by learning React and APIs. My recent course work and capstone has given me the experience to build functional, clean projects.</p>
+        </div>
+
+    </section>
+    <section class="skills-section" id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+
+            <article class="skill-card">
+                <img src="./images/html-icon.svg" alt="HTML5 logo" class="skill-icon">
+                <h3>HTML5</h3>
+                <p>Structuring the web with semantic and accessible code</p>
+            </article>
+
+            <article class="skill-card">
+                <img src="./images/css3-icon.svg" alt="CSS3 logo" class="skill-icon">
+                <h3>CSS3</h3>
+                <p>Designing responsive, modern layouts using Grid and FlexBox</p>
+            </article>
+
+            <article class="skill-card">
+                <img src="./images/jscript-icon.svg" alt="JavaScript logo" class="skill-icon">
+                <h3>JavaScript</h3>
+                <p>Structuring the web with semantic and accessible code</p>
+            </article>
+
+            <article class="skill-card">
+                <img src="./images/git-icon.svg" alt="Git logo" class="skill-icon">
+                <h3>Git</h3>
+                <p>Version control and collaboration using Git</p>
+            </article>
+
+            <article class="skill-card">
+                <img src="./images/github-icon.svg" alt="GitHub logo" class="skill-icon">
+                <h3>GitHub</h3>
+                <p>Hosting projects and collaborating with GitHub</p>
+            </article>
+
+            <article class="skill-card">
+                <img src="./images/vscode-icon.svg" alt="VS Code logo" class="skill-icon">
+                <h3>VS Code</h3>
+                <p>Writing clean code efficiently using VS Code</p>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="project-section" id="projects">
+        <h2 class="projects">Projects</h2>
+        <div class="projects-container">
+            <article class="project-card">
+                <img src="./images/abstract-clock.jpg">
+                <h3>Java Script Clock</h3>
+                <p>This JavaScript Clock app shows the current time in real-time, updating per second. It has a simple
+                    user friendly design.</p>
+                <a href="https://austdinh.github.io/javascript-clock-app/" target="_blank">
+                    <button class="project-button">View Project</button></a>
+            </article>
+
+            <article class="project-card">
+                <img src="./images/ranger-helmet.jpg">
+                <h3>Power Rangers Website</h3>
+                <p>This Power Rangers website shows the different season of each power rangers titles. It explains every
+                    season in detail.</p>
+                <a href="https://austdinh.github.io/power-rangers-website/" target="_blank">
+                    <button>View Project</button></a>
+            </article>
+
+            <article class="project-card">
+                <img src="./images/pet-background.jpg">
+                <h3>NAWS Website Revamp</h3>
+                <p>This non profit revamp website was given a fresh, modern look, with better navigation and
+                    accessibility.. </p>
+                <a href="https://austdinh.github.io/non-profit-pet-revamp-website/" target="_blank">
+                    <button>View Project</button></a>
+            </article>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2 class="contact">Contact</h2>
+        <form class="contact-form" action="#" method="POST">
+
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number">
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer class="site-footer">
+        <nav class="footer-nav">
+            <ul class="footer-links">
+
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <p>&copy; 2026 Austin Dinh. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
