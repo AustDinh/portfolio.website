@@ -22,7 +22,7 @@ body {
 }
 
 /*Navigation */
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +30,7 @@ body {
     width: 100%;
     position: relative;
 
-}
+} */
 
 .logo a {
     text-decoration: none;
