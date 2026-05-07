@@ -959,3 +959,9 @@ strong {
         margin-bottom: 40px;
     }
 }
+@media(min-width:2560px){
+    .hero-section{
+        max-width: 3400px;
+        width: 100%;
+    }
+}
