@@ -59,7 +59,7 @@ body {
     text-align: center;
     z-index: 1000;
     transform: translateX(100%);
-    /* transition: transform 0.4s ease-in-out; */
+    transition: transform 0.4s ease-in-out;
 }
 
 .nav-links a {
@@ -264,9 +264,43 @@ opacity: 0;
     display: inline-block;
     margin: 40px 0;
     border-radius: 15px;
+    border: 4px solid var(--primary-color);
+}
+.about-me-bullet{
+    list-style: none;
+    padding:0;
+    max-width: 600px;
+    text-align: left;
 }
 
-.about-section p {
+.about-me-bullet li{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height:1.6;
+}
+
+.icon{
+    margin-right: 15px;
+    font-size: 1.5rem;
+    min-width: 30px;
+}
+
+.about-container h1{
+    font-size:2rem;
+    color:var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.highlight{
+    background-color: rgba(var(--secondary-color), 0.2);
+}
+
+strong{
+    color:var(--primary-color);
+}
+/* .about-section p {
     font-size: 1.25rem;
     margin-bottom: 1.25rem;
     text-align: left;
@@ -274,7 +308,7 @@ opacity: 0;
     max-width: 100%;
     padding: 0 1.5rem;
     color: var(--secondary-color);
-}
+} */
 
 /* Skills Section */
 
