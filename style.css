@@ -653,8 +653,8 @@ strong {
 }
 
 /*Make sure this works on larger screens */
-.hero-content,
-.projects-container {
+.hero-content
+ {
     max-width: 1400px;
     margin-left: .5rem;
     width: 90%;
